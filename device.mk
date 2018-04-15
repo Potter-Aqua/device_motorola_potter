@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/vendor/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/vendor/etc/sound_trigger_platform_info.xml    
 
+#NitrogenOTA
+PRODUCT_PACKAGES += \
+    NitrogenOTA
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
