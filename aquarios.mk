@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 TARGET_BOOTANIMATION_SIZE := 1080p
 
 # Inherit some common Nitrogen stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/aquarios/products/aquarios_phone.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/device.mk)
@@ -35,7 +35,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := nitrogen_potter
+PRODUCT_NAME := potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
