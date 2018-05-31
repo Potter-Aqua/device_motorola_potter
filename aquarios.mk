@@ -23,11 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 TARGET_BOOTANIMATION_SIZE := 1080p
 
 # Inherit some common Nitrogen stuff.
+#$(call inherit-product, vendor/aquarios/products/aquarios_phone.mk)
 $(call inherit-product, vendor/aquarios/products/aquarios_phone.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/device.mk)
-$(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
+$(call inherit-product, vendor/motorola/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
